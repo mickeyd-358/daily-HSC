@@ -1,13 +1,12 @@
 :root {
-    --bg-color: ;
+    --bg-color: white;
     --widget-bg: ;
-    --text-color: ;
-    --button-color: ;
-    --button-text-color: ;
-    --accent-color1: ;
-    --accent-color2: ;
-    --border-color: ;
-    --ring-color: ;
+    --text-color: black;
+    --button-color: teal;
+    --button-text-color: white;
+    --accent-color1: rgb(7, 7, 70);
+    --accent-color2: rgb(238, 161, 174);
+    --border-color: black;
     --nav-bg: ;
     --nav-text: ;
     --nav-hover-bg: ;
@@ -40,4 +39,13 @@
     --accent-color: #d3f127;
     --border-color: #ffb9ea;
     --nav-bg: #2a024d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color)
+}
+
+h1 {
+    color: var(--text-color);
 }
