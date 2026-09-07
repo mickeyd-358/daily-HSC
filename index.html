@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href = "styles.css">
-    <title>DailyHSC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HSC Daily</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>DailyHSC</h1>
-    <h2>Daily questions for every subject of the HSC</h2>
-    <h3>billy</h3>
+
+    <header>
+        <h1>HSC Daily</h1>
+        <p>One question. Every day.</p>
+    </header>
+
+    <main>
+        <section class="question-card">
+
+            <div class="question-info">
+                <span id="subject">PHYSICS</span>
+                <span id="difficulty">MEDIUM</span>
+            </div>
+
+            <h2>Question of the Day</h2>
+
+            <p id="question">
+                Loading...
+            </p>
+
+            <button id="reveal-button">
+                Reveal Answer
+            </button>
+
+            <div id="answer-container" class="hidden">
+                <h3>Answer</h3>
+                <p id="answer"></p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
-
-
 </html>
