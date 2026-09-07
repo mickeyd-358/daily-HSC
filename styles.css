@@ -1,50 +1,104 @@
-:root {
-    --bg-color: white;
-    --widget-bg: ;
-    --text-color: black;
-    --button-color: teal;
-    --button-text-color: white;
-    --accent-color1: rgb(7, 7, 70);
-    --accent-color2: rgb(238, 161, 174);
-    --border-color: black;
-}
-
-[data-theme="dark"] {
-    --bg-color: #0b0e24;
-    --widget-bg: #1b1f48;
-    --button-color: #f4f7f6;
-    --text-color: #f4f7f6;
-    --button-text-color: #1b1f48;
-    --accent-color1: #00ffb7;
-    --accent-color2: #1b1f48;
-    --border-color: #2a2f5b;
-    --ring-color: black;
-    --nav-bg: #070914;
-    --nav-text: #f4f7f6;
-    --nav-hover-bg: #00ffb7;
-    --nav-hover-text: #070914;
-    --nav-active-bg: rgba(255, 255, 255, 0.08);
-}
-
-[data-theme="purple"] {
-    --bg-color: #41035e;
-    --widget-bg: #bb4bef;
-    --button-color: #41035e
-    --text-color: #f4f7f6;
-    --accent-color: #d3f127;
-    --border-color: #ffb9ea;
-    --nav-bg: #2a024d;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #1b1f48;
+    min-height: 100vh;
 }
 
-h1 {
-    color: var(--text-color);
+header {
+    text-align: center;
+    padding: 60px 20px 30px;
 }
 
-h1{
-    color:#00ffb7;
+header h1 {
+    font-size: 42px;
+}
+
+header p {
+    margin-top: 10px;
+    color: #666;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.question-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.question-info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.question-info span {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#subject {
+    background: #e8eaff;
+}
+
+#difficulty {
+    background: #fff0d9;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#question {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 13px 24px;
+    border: none;
+    border-radius: 10px;
+    background: #1b1f48;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#answer-container {
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #f4f7f6;
+}
+
+#answer-container h3 {
+    margin-bottom: 10px;
+}
+
+#answer-container p {
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
 }
